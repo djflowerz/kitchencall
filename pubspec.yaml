@@ -1,0 +1,76 @@
+name: kitchencall_customer
+description: KitchenCall - Book trusted home cooks for fresh, home-cooked meals.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  flutter_riverpod: ^2.5.1
+
+  # Navigation
+  go_router: ^14.2.0
+
+  # UI / Fonts / Icons
+  google_fonts: ^6.2.1
+  cached_network_image: ^3.3.1
+  flutter_svg: ^2.0.10+1
+  shimmer: ^3.0.0
+  lottie: ^3.1.2
+
+  # Maps & Location (wire up real API keys before release)
+  google_maps_flutter: ^2.6.1
+  geolocator: ^12.0.0
+
+  # Firebase (uncomment once you run `flutterfire configure`)
+  # firebase_core: ^3.1.0
+  # firebase_auth: ^5.1.0
+  # cloud_firestore: ^5.0.1
+  # firebase_storage: ^12.1.0
+  # firebase_messaging: ^15.0.1
+
+  # Payments
+  # flutter_paystack: ^1.0.7   # or M-Pesa Daraja SDK wrapper of your choice
+
+  # Utilities
+  intl: ^0.19.0
+  uuid: ^4.4.0
+  equatable: ^2.0.5
+  flutter_rating_bar: ^4.0.1
+  table_calendar: ^3.1.2
+  pin_code_fields: ^8.0.1
+  percent_indicator: ^4.2.3
+  flutter_slidable: ^3.1.1
+  url_launcher: ^6.3.0
+  share_plus: ^9.0.0
+  image_picker: ^1.1.2
+
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.11
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+    - assets/mock/
+
+  # fonts:
+  #   - family: Poppins
+  #     fonts:
+  #       - asset: assets/fonts/Poppins-Regular.ttf
+  #       - asset: assets/fonts/Poppins-Bold.ttf
+  #         weight: 700
